@@ -13,7 +13,7 @@ export const siteData = {
   contact: {
     phone: "0203 778 1985",
     email: "london@tattu.co.uk",
-    phoneHref: "tel:02037781985",
+    phoneHref: "tel:+442037781985",
     emailHref: "mailto:london@tattu.co.uk",
   },
   hours: {
@@ -42,6 +42,5 @@ export const siteData = {
     sundayRoast: "https://tattu.co.uk/wp-content/uploads/2025/10/LONDON_Roast-menu-ONLINE.pdf",
   },
   walkthrough: "https://tattu.co.uk/3d-walkthrough-london/",
-  mapUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8380403053995!2d-0.13080582301658303!3d51.51321811145997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d19ec75cb7%3A0x29a6c2ddda52c4d8!2sTattu%20London!5e0!3m2!1sen!2suk!4v1720644000000!5m2!1sen!2suk",
+  mapUrl: "https://www.google.com/maps?q=51.515385,-0.1295445&t=k&z=18&output=embed",
 };
