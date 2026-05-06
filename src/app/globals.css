@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-tattu-black: #0a0a0a;
+  --color-tattu-charcoal: #141414;
+  --color-tattu-plum: #1a0a14;
+  --color-tattu-jade: #0d1f1a;
+  --color-tattu-gold: #c9a96e;
+  --color-tattu-gold-light: #e8d5a3;
+  --color-tattu-crimson: #8b1a1a;
+  --color-tattu-amber: #b8860b;
+  --color-tattu-pink: #ff6b9d;
+  --color-tattu-smoke: #2a2a2a;
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #f0f0f0;
+  --tattu-black: #0a0a0a;
+  --tattu-charcoal: #141414;
+  --tattu-plum: #1a0a14;
+  --tattu-jade: #0d1f1a;
+  --tattu-gold: #c9a96e;
+  --tattu-gold-light: #e8d5a3;
+  --tattu-crimson: #8b1a1a;
+  --tattu-amber: #b8860b;
+  --tattu-pink: #ff6b9d;
+  --tattu-smoke: #2a2a2a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tattu-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tattu-gold);
+  border-radius: 3px;
+}
+
+/* Font families */
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(201, 169, 110, 0.08);
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--tattu-gold) 0%, var(--tattu-gold-light) 50%, var(--tattu-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effect */
+.glow-gold {
+  box-shadow: 0 0 20px rgba(201, 169, 110, 0.3), 0 0 40px rgba(201, 169, 110, 0.1);
+}
+
+/* Animation utilities */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(201,169,110,0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Section padding */
+.section-padding {
+  @apply py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding-sm {
+  @apply py-12 md:py-16 px-4 sm:px-6 lg:px-8;
+}
+
+/* Container */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
