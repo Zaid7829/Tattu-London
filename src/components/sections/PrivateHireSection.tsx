@@ -12,7 +12,7 @@ export default function PrivateHireSection() {
     <section id="private-hire" className="relative py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/assets/tattu-private-dining.svg"
+          src="/assets/tattu-private-dining.png"
           alt="Private dining room at Tattu London"
           className="object-cover w-full h-full"
         />

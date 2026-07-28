@@ -12,7 +12,7 @@ export default function BookingCTA() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/assets/tattu-hero.svg"
+          src="/assets/tattu-hero.png"
           alt=""
           className="object-cover w-full h-full"
         />

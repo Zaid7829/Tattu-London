@@ -10,28 +10,28 @@ const experiences = [
     title: "Rooftop Dining",
     description:
       "Dine amongst the clouds with panoramic views of London's skyline. Our rooftop terrace offers an unparalleled atmosphere where city lights meet culinary artistry.",
-    image: "/assets/tattu-hero.svg",
+    image: "/assets/tattu-hero.png",
     icon: "◆",
   },
   {
     title: "Modern Asian Cuisine",
     description:
       "Contemporary Chinese and modern Asian dishes crafted with precision and passion. Each plate tells a story of tradition reimagined through a lens of innovation.",
-    image: "/assets/tattu-food-1.svg",
+    image: "/assets/tattu-food-1.png",
     icon: "◇",
   },
   {
     title: "Signature Cocktails",
     description:
       "Expertly crafted cocktails at the Phoenix Bar, where mixology meets artistry. Each drink is a sensory experience designed to complement your evening.",
-    image: "/assets/tattu-cocktail-1.svg",
+    image: "/assets/tattu-cocktail-1.png",
     icon: "◆",
   },
   {
     title: "Private Hire",
     description:
       "Opulent surroundings suitable for a range of events and exclusive private hires. Create unforgettable moments in our stunning private spaces.",
-    image: "/assets/tattu-private-dining.svg",
+    image: "/assets/tattu-private-dining.png",
     icon: "◇",
   },
 ];

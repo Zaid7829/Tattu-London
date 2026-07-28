@@ -27,7 +27,7 @@ export default function VenueStorySection() {
           >
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-tattu-charcoal">
               <img
-                src="/assets/tattu-interior-1.svg"
+                src="/assets/tattu-interior-1.png"
                 alt="Tattu London interior inspired by Traditional Chinese Courtyard House"
                 className="object-cover w-full h-full"
               />
@@ -40,7 +40,7 @@ export default function VenueStorySection() {
               className="absolute -bottom-8 -right-4 md:right-8 w-40 h-52 md:w-48 md:h-64 rounded-lg overflow-hidden border border-tattu-gold/20 shadow-2xl"
             >
               <img
-                src="/assets/tattu-cocktail-1.svg"
+                src="/assets/tattu-cocktail-1.png"
                 alt="Signature cocktail at Tattu Phoenix Bar"
                 className="object-cover w-full h-full"
               />

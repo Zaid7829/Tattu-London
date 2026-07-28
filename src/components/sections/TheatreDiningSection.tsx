@@ -65,7 +65,7 @@ export default function TheatreDiningSection() {
           >
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <img
-                src="/assets/tattu-food-1.svg"
+                src="/assets/tattu-food-1.png"
                 alt="Tattu London theatre dining experience"
                 className="object-cover w-full h-full"
               />

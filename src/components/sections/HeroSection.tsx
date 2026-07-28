@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url(/assets/tattu-hero.svg)",
+          backgroundImage: "url(/assets/tattu-hero.png)",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-tattu-black/80 via-tattu-black/60 to-tattu-black" />
